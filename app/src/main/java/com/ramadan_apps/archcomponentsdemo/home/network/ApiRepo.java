@@ -17,7 +17,7 @@ public class ApiRepo {
     }
 
 
-    public RepoService getInstance() {
+    public static RepoService getInstance() {
         if (repoService != null)
             return repoService;
         if (retrofit == null)
@@ -26,7 +26,7 @@ public class ApiRepo {
         return repoService;
     }
 
-    private void initRetrofit() {
+    private static  void initRetrofit() {
         retrofit = new Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(MoshiConverterFactory.create()).build();
     }
 
