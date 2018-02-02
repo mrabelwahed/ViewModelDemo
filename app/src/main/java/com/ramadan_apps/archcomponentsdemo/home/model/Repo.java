@@ -12,10 +12,10 @@ public class Repo {
     public  final String description;
     public  final User owner;
 
-    @Json(name =  "stargazers")
+    @Json(name =  "stargazers_count")
     public final long stars;
 
-    @Json(name = "forks")
+    @Json(name = "forks_count")
     public final long  forks;
 
     public Repo(long id , String name , String description, User owner, long stars, long forks){

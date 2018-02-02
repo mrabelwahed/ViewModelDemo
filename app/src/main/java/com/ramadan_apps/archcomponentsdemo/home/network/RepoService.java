@@ -12,6 +12,6 @@ import retrofit2.http.GET;
  */
 
 public interface RepoService {
-    @GET("orgs/Google/repos")
+    @GET("orgs/twitter/repos ")
     Call<List<Repo>> getRepos();
 }
